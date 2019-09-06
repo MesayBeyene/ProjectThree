@@ -1,7 +1,7 @@
 // Make connection
-var socket = io.connect('http://localhost:4000');
 
-//query the dom
+
+var socket = io.connect('http://localhost:4000');
 
 var message = document.getElementById("message");
 var handle = document.getElementById("handle");
@@ -25,6 +25,10 @@ message.addEventListener("keypress", function(){
   
 socket.on('chat', function(data){
     output.innerHTML += "<p><strong>" + data.handle + "  </strong>  " + data.message + "</p>"
+    if (data.handle === "bob"){
+        console.log("espanol porfavor")
+    }
+     // Hola mundo
 })
 
 socket.on("typing", function(data){

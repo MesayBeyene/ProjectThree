@@ -1,8 +1,8 @@
 $("#submit").click(function(){
     var name = $("#name").val()
-    var username = $("#name").val()
-    var password = $("#name").val()
-    var language = $("#name").val()
+    var username = $("#username").val()
+    var password = $("#password").val()
+    var language = $("#language").val()
 
     console.log(name)
     console.log(username)
@@ -10,7 +10,7 @@ $("#submit").click(function(){
     console.log(language)
 
     if (language === "spanish"){
-         
+         console.log("spanish")
     }
   });
 
